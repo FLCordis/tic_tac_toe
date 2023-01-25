@@ -21,7 +21,7 @@ body{
 .background{
     color: var(--font-color);
     height: 100vh;
-    padding-top: 1px;
+    padding-top: 5px;
 }
 
 .title{
