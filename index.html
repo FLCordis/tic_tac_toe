@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section class="players">
+            <label for="player1" id="label1">X -</label>
+            <input type="text" name="player1" id="player1" placeholder="Nome do P1...">
+            <label for="player2" id="label2">O -</label>
+            <input type="text" name="player2" id="player2" placeholder="Nome do P2...">
+        </section>
+        
+        <h2>Digitem seus nomes! <span id="turnPlayer"></span></h2>
+        <section id="gameBoard">
+            <span class="tilePart" data-region="0.0"></span>
+            <span class="tilePart" data-region="0.1"></span>
+            <span class="tilePart" data-region="0.2"></span>
+            <span class="tilePart" data-region="1.0"></span>
+            <span class="tilePart" data-region="1.1"></span>
+            <span class="tilePart" data-region="1.2"></span>
+            <span class="tilePart" data-region="2.0"></span>
+            <span class="tilePart" data-region="2.1"></span>
+            <span class="tilePart" data-region="2.2"></span>
+        </section>
+        <section class="startSection">
+            <button id="startBtn">Começar</button> 
+            <br>
+            <button id="restartBtn" class="hide">Restart</button>
+        </section>
+        <footer>
+            <span class="copyrightFC">
+                Flávio Cordis &copy;2022
+            </span>
+            <a href="https://www.linkedin.com/in/flaviompcordis/" target="_blank" class="linkedin">LinkedIn</a>
+            <a href="https://github.com/FLCordis" target="_blank" class="github">GitHub</a>
+        </footer>
+    </main>
+</body>
+</html>
