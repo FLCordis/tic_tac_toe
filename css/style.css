@@ -201,14 +201,14 @@ footer a:hover{
         border-radius: 15px;
     }
     h2{
-        margin-top: 2%;
+        margin-top: 0px;
         margin-bottom: 2%;
     }
     .startSection{
         margin-top: 10px;
     }
     footer{
-        font-size: 18px;
+        font-size: 12px;
     }
 
   }
