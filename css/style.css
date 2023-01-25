@@ -25,10 +25,19 @@ body{
 }
 
 .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     color: var(--font-secondary);
     text-align: center;
-    font-size: 32px;
-    margin-top: 20px;
+    font-size: 46px;
+    margin: 0;
+}
+
+#tictacimg{
+    width: 100px;
+    margin-right: 25px;
 }
 
 .players{
@@ -56,7 +65,8 @@ body{
 
 .startSection{
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 h2{
@@ -126,7 +136,7 @@ footer{
 }
 
 footer a{
-    margin: 0px 10px;
+    margin: 0px auto;
     text-decoration: underline;
     color: white;
 }
@@ -137,4 +147,113 @@ footer a:hover{
 
 .hide{
     display: none;
+}
+
+@media (max-width: 1280px) {
+    .title{
+        font-size: 28px;
+        margin-top: 1px;
+    }
+    .players{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #player1{
+        margin: 30px 150px 25px 5px;
+        font-size: 20px;
+        width: 200px;
+    }
+    
+    #player2{
+        font-size: 20px;
+        width: 200px;
+    }
+
+    #label1, #label2{
+        font-size: 22px;
+    }
+
+    #gameBoard{
+        margin: 0 auto;
+        grid-template-columns: 6rem 6rem 6rem;
+        grid-template-rows: 5rem 5rem 5rem;
+        max-width: 19rem;
+        gap: .5rem;
+        margin-bottom: 0px;
+    }
+    
+    #gameBoard span {
+        font-size: 4rem;
+    }
+
+    #startBtn{
+        font-size: 32px;
+        border: 1px solid #03001C;
+        border-radius: 15px;
+    }
+    
+    #restartBtn{
+        font-size: 32px;
+        border: 1px solid #03001C;
+        width: 150px;
+        border-radius: 15px;
+    }
+    h2{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .startSection{
+        margin-top: 10px;
+    }
+    footer{
+        font-size: 18px;
+    }
+
+  }
+
+@media (max-width: 560px) {
+    .title{
+        font-size: 18px;
+        margin-top: 1%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: 2rem 2rem;
+        grid-template-rows: 2rem 2rem;
+        place-content: start;
+        flex-wrap: wrap;
+        font-size: 14px;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+    #player1{
+        margin: 0 auto;
+        font-size: 14px;
+        width: 150px;
+    }
+    
+    #player2{
+        margin: 0 auto;
+        font-size: 14px;
+        width: 150px;
+    }
+    #gameBoard{
+        grid-template-columns: 3rem 3rem 3rem;
+        grid-template-rows: 3rem 3rem 3rem;
+        max-width: 10rem;
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .startSection{
+        margin-top: 5%;
+    }
+    footer{
+        font-size: 10px;
+    }
 }
