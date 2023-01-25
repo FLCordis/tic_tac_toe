@@ -115,6 +115,7 @@ h2{
     cursor: pointer;
     background-color: #373c42;
     color: var(--font-secondary);
+    padding: 5px 15px;
 }
 
 #restartBtn{
@@ -125,6 +126,7 @@ h2{
     cursor: pointer;
     background-color: var(--bg-secondary);
     color: var(--font-secondary);
+    padding: 5px 15px;
 }
 
 footer{
